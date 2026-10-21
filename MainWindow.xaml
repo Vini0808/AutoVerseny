@@ -13,7 +13,7 @@
             <RowDefinition Height ="10" />
             <RowDefinition Height = "*" />
         </Grid.RowDefinitions>
-        <Button x:Name="start" Content="Start" Width="90" Height ="45" Grid.Row="1" Background="Bisque"/>
+        <Button x:Name="start" Content="Start" Width="90" Height ="45" Grid.Row="1" Background="Bisque" Click="start_Click"/>
 
         <Canvas x:Name="palya" Background="AliceBlue" Grid.Row="3">
             
