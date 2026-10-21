@@ -56,5 +56,10 @@ namespace AutoVerseny
             Canvas.SetLeft(auto3, 20);
             timer.Start();
         }
+
+        private void auto_Click(object sender, RoutedEventArgs e) //titkos segites clikkenkent. Only mazda
+        {
+            Mozog(auto);
+        }
     }
 }
