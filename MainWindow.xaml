@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="20" />
+            <RowDefinition Height ="70" />
+            <RowDefinition Height ="10" />
+            <RowDefinition Height = "*" />
+        </Grid.RowDefinitions>
+        <Button x:Name="start" Content="Start" Width="90" Height ="45" Grid.Row="1" Background="Bisque"/>
+
+        <Canvas x:Name="palya" Background="AliceBlue" Grid.Row="3">
+            
+            <Button x:Name="auto" Content="Ferrari" Width="90" Height="45" Background="Crimson" Canvas.Left="20" Canvas.Top="50"/>
+            
+            
+        </Canvas>
 
     </Grid>
 </Window>
