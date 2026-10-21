@@ -24,7 +24,7 @@ namespace AutoVerseny
         {
             InitializeComponent();
             timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromMilliseconds(20);
+            timer.Interval = TimeSpan.FromMilliseconds(10);
             timer.Tick += Timer_Tick;
         }
 
@@ -38,7 +38,7 @@ namespace AutoVerseny
         private void Mozog(Button auto)
         {
             double aktualispozicio = Canvas.GetLeft(auto);
-            double sebesseg = r.Next(1, 10);
+            double sebesseg = r.Next(1, 10) / 2;
             double ujpozicio = aktualispozicio + sebesseg;
             Canvas.SetLeft(auto, ujpozicio);
 

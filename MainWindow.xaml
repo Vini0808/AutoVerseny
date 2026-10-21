@@ -23,7 +23,7 @@
 
             <Button x:Name="auto3" Content="AUDI" Width="90" Height="45" Background="IndianRed" Canvas.Left="20" Canvas.Top="220"/>
             
-            <TextBox x:Name="col" Width="55" Height="350" Background="Black" Canvas.Right="0"/>
+            <TextBox x:Name="col" Width="55" Height="335" Background="Black" Canvas.Right="-5"/>
 
         </Canvas>
     </Grid>
