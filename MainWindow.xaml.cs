@@ -59,7 +59,10 @@ namespace AutoVerseny
 
         private void auto_Click(object sender, RoutedEventArgs e) //titkos segites clikkenkent. Only mazda
         {
-            Mozog(auto);
+            if (timer.IsEnabled)
+            {
+                Mozog(auto);
+            }
         }
     }
 }
