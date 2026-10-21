@@ -31,6 +31,8 @@ namespace AutoVerseny
         private void Timer_Tick(object? sender, EventArgs e)
         {
             Mozog(auto);
+            Mozog(auto2);
+            Mozog(auto3);
         }
 
         private void Mozog(Button auto)
@@ -43,13 +45,15 @@ namespace AutoVerseny
             if (ujpozicio >= celvonal)
             {
                 timer.Stop();
-                MessageBox.Show($"Az autó célba ért");
+                MessageBox.Show($"Az {auto.Content} célba ért");
             }
         }
 
         private void start_Click(object sender, RoutedEventArgs e)
         {
             Canvas.SetLeft(auto, 20);
+            Canvas.SetLeft(auto2, 20);
+            Canvas.SetLeft(auto3, 20);
             timer.Start();
         }
     }
